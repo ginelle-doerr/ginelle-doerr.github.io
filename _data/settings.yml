@@ -26,14 +26,3 @@ social:
 - {icon: 'linkedin',  link: 'https://linkedin.com/in/ginelle-d'}
 
 # social network icons available: 'twitter' / 'facebook' / 'github' / 'pinterest' 'google-plus' / 'linkedin' / 'youtube' / 'instagram' / 'dribbble' / 'behance' / 'soundcloud' / 'vine'
-
-#-------------------------------
-# Google Analytics Section
-
-# Analytics helps you understand who visits your website.
-# Learn more at: http://support.google.com/analytics/answer/1008065
-
-# NOTE: If you want to use Google Analytics for basic web tracking: Just uncomment and enter your UA-Code here.
-
-# If you are not using Google Analytics, please change 'google-ID' to an empty string
-google-analytics-ua: ''
