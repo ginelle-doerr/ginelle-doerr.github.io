@@ -3,10 +3,8 @@
 port: 4000
 markdown:  kramdown
 permalink: /:title
-plugins:   [jekyll-sitemap, jekyll-feed,  jekyll-seo-tag]
-
-# Customise atom feed settings (this is where Jekyll-Feed gets configuration information)
+plugins:   [jekyll-sitemap, jekyll-seo-tag]
 
 title:       "Ginelle Doerr"
-description: "GIS, mapping, and geospatial projects"
+description: "GIS portfolio of Ginelle Doerr: mapping, spatial analysis, and geospatial projects."
 author:      "Ginelle Doerr"

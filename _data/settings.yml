@@ -4,17 +4,19 @@
 menu:
 - {name: 'Projects', url: ''}
 - {name: 'About',    url: 'about'}
-- {name: 'Contact',  url: 'contact'}
 
 #-------------------------------
 # Projects Section
 
 projects:
-- {name: 'LiDAR Classification',   url: 'proj-1'}
-- {name: 'Building Footprints',   url: 'proj-2'}
-- {name: 'StoryMap Project', url: 'proj-3'}
-- {name: 'Experience Builder',  url: 'proj-4'}
-- {name: 'Python',  url: 'proj-5'}
+- {name: 'Metro Building Footprints', url: 'building-footprints', tag: 'Python · StoryMap · 2025'}
+- {name: 'Mountain Goats', url: 'mountain-goats', tag: 'Site Suitability Analysis · 2024'}
+- {name: 'Little Libraries', url: 'little-libraries', tag: 'Experience Builder · 2025'}
+- {name: 'BEECNs', url: 'beecns', tag: 'Web Map · StoryMap · 2025'}
+- {name: 'Crater Lake National Park', url: 'crater-lake', tag: 'Cartographic Design · 2025'}
+- {name: 'Heat Equity Map', url: 'heat-equity-map', tag: 'Raster & Vector Analysis · 2024'}
+- {name: 'Urbanization and Temperature', url: 'heat-map', tag: 'Remote Sensing · 2024'}
+- {name: 'Western Monarchs', url: 'western-monarchs', tag: 'Infographic · Canva · 2025'}
 
 #-------------------------------
 # Contact Section
@@ -26,16 +28,6 @@ social:
 # social network icons available: 'twitter' / 'facebook' / 'github' / 'pinterest' 'google-plus' / 'linkedin' / 'youtube' / 'instagram' / 'dribbble' / 'behance' / 'soundcloud' / 'vine'
 
 #-------------------------------
-# SEO Section
-
-# NOTE: Providing SEO information will make this website more searchable on the internet.
-
-seo:
-  description: 'Personal portfolio powered by Jekyll and GitHub Pages '
-  rel-author: 'https://plus.google.com/u/0/#'
-  rel-publisher: 'https://plus.google.com/u/0/#'
-
-#-------------------------------
 # Google Analytics Section
 
 # Analytics helps you understand who visits your website.
@@ -45,11 +37,3 @@ seo:
 
 # If you are not using Google Analytics, please change 'google-ID' to an empty string
 google-analytics-ua: ''
-
-#-------------------------------
-# Disqus Section
-
-# Change to true for Disqus comments
-disqus:
-  comments: false
-  disqus_shortname: ''

@@ -1,44 +1,48 @@
+.home-intro
+  clear: both
+  max-width: 700px
+  padding: 20px 30px 0px
+  p
+    line-height: 1.5
+    margin-bottom: 10px
+    font:
+      size: 18px
+
 .project-container
-  max-width: 750px
-  margin: 0px auto 0px
+  clear: both
+  display: grid
+  grid-template-columns: repeat(2, 1fr)
+  gap: 30px
   padding: 30px
-  +clearfix
-  .project-unit
-    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23)
-    cursor: pointer
+  .project-card
     display: block
-    width: 600px
-    height: 300px
-    margin: 0px auto 30px
-    position: relative
-    overflow: hidden
-    background:
-      position: center center
-      repeat: no-repeat
-      size: cover
-    .project-overlay
-      +position(absolute, 100% 0px null 0px)
-      height: 100%
-      background: fade-out(#333, 0.5)
-      text-align: center
-      //+transition
-      +display(flex)
-      +align-items(center)
-      +justify-content(space-around)
-      strong
-        display: block
-        padding: 20px
-        color: white
-        line-height: 1.2
-        font:
-          size: 24px
-          weight: 300
-    &:hover .project-overlay
-      +position(absolute, 0px 0px null 0px)
+    background: white
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23)
+    img
+      display: block
+      width: 100%
+      aspect-ratio: 4 / 3
+      object-fit: cover
+    strong
+      display: block
+      padding: 15px 15px 5px
+      color: black
+      line-height: 1.2
+      font:
+        size: 20px
+        weight: 700
+    span
+      display: block
+      padding: 0 15px 15px
+      color: $textColor
+      font:
+        size: 14px
+    &:hover strong
+      color: $accent-color
 
 @media (max-width: 768px)
   .project-container
-    max-width: 80vw
-    .project-unit
-      width: 80vw
-      height: 40vw
+    grid-template-columns: 1fr
+    padding: 20px 0px
+  .home-intro
+    padding: 20px 0px 0px

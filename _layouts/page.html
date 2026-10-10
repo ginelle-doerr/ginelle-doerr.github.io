@@ -4,6 +4,12 @@ layout: default
 
 <section>
   <div class="page-content">
+    {% if page.photo %}
+      {% assign photo = site.static_files | where: "path", page.photo | first %}
+      {% if photo %}
+        <img class="page-photo" src="{{ site.github.url }}{{ photo.path }}" alt="{{ site.author }}">
+      {% endif %}
+    {% endif %}
     {{ content }}
   </div>
 </section>
