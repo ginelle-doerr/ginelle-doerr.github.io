@@ -7,7 +7,7 @@ layout: default
     {% if page.photo %}
       {% assign photo = site.static_files | where: "path", page.photo | first %}
       {% if photo %}
-        <img class="page-photo" src="{{ site.github.url }}{{ photo.path }}" alt="{{ site.author }}">
+        <img class="page-photo" src="{{ site.baseurl }}{{ photo.path }}" alt="{{ site.author }}">
       {% endif %}
     {% endif %}
     {{ content }}

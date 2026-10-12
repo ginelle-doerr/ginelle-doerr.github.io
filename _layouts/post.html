@@ -7,7 +7,7 @@ layout: default
     <h4 class="project-title">{{ page.title }}</h4>
     <div class="project-load">{{ content }}</div>
     {% if page.map_image %}
-      {% capture map_url %}{{ site.github.url }}/assets/img/{{ page.map_image }}{% endcapture %}
+      {% capture map_url %}{{ site.baseurl }}/assets/img/{{ page.map_image }}{% endcapture %}
       {% include image.html url=map_url image=page.map_image alt=page.title text="View full size" %}
     {% endif %}
     {% if page.embed_url and page.embed_url != '' %}

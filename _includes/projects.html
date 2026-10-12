@@ -1,8 +1,8 @@
 <section>
   <div class="project-container">
     {% for project in site.data.settings.projects %}
-      <a class="project-card" href="{{ site.github.url }}/projects/{{ project.url }}">
-        <img src="{{ site.github.url }}/assets/img/projects/{{ project.url }}/thumbnail.jpg" alt="{{ project.name }}">
+      <a class="project-card" href="{{ site.baseurl }}/projects/{{ project.url }}">
+        <img src="{{ site.baseurl }}/assets/img/projects/{{ project.url }}/thumbnail.jpg" alt="{{ project.name }}">
         <strong>{{ project.name }}</strong>
         <span>{{ project.tag }}</span>
       </a>
